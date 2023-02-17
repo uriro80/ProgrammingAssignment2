@@ -13,14 +13,14 @@
 ## Than an output list is generated containing the functions and the variables x and Inv.
 
 makeCacheMatrix <- function(x = matrix()) {
-        Inv <- NULL
+        Inv1 <- NULL
         setmat <- function(y) {
                 x <<- y
-                Inv <<- NULL
+                Inv1 <<- NULL
         }
         getmat <- function() x
-        setinverse <- function(solve) Inv <<- solve
-        getinverse <- function() Inv
+        setinverse <- function(solve) Inv1 <<- solve
+        getinverse <- function() Inv1
         list(setmat = setmat, getmat = getmat,
              setinverse = setinverse,
              getinverse = getinverse)
